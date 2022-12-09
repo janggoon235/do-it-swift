@@ -69,12 +69,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func sgChangeLocation(_ sender: UISegmentedControl) {
+        self.lblLocationInfo1.text = "보고계신 위치"
         if sender.selectedSegmentIndex == 0 {
             // 현재 위치 표시
+            self.lblLocationInfo2.text = ""
+            locationManager.startUpdatingLocation()
         } else if sender.selectedSegmentIndex == 1 {
             // 국립박물관 위치 표시
+            setAnnotation(latitudeValue: 37.5461131, longitudeValue: 126.8717128, delta: 1, title: "국립중앙박물관", subtitle: "서울 용산구 서빙고로 137 국립중앙박물관")
+            
+            self.lblLocationInfo2.text = "국립중앙박물관"
         } else if sender.selectedSegmentIndex == 2 {
             // 현대백화점 위치 표시
+            setAnnotation(latitudeValue: 37.5258975, longitudeValue: 126.9284261, delta: 1, title: "더현대", subtitle: "서울 영등포구 여의대로 108 더현대 서울")
+            self.lblLocationInfo2.text = "영등포 더현대 현대백화점"
         }
     }
     
