@@ -38,6 +38,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DtS-ME-A6H">
+                                <rect key="frame" x="58" y="351" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,6 +54,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imgView" destination="DtS-ME-A6H" id="nUf-6u-eGA"/>
+                        <outlet property="swIsOn" destination="ci7-J6-qAl" id="ZKy-w8-mfe"/>
+                        <outlet property="swlsOn" destination="ci7-J6-qAl" id="pRr-hX-jpC"/>
                         <outlet property="txMessage" destination="fgA-2g-RFp" id="wZP-Ro-3BQ"/>
                     </connections>
                 </viewController>
@@ -94,6 +101,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ci7-J6-qAl">
+                                <rect key="frame" x="302" y="149" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="swImageOnOff:" destination="Pd4-tW-VJD" eventType="valueChanged" id="ghd-qu-UsL"/>
+                                    <action selector="swlsOn:" destination="BYZ-38-t0r" eventType="valueChanged" id="f7f-sh-ytL"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cQy-MQ-9Ys"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,6 +116,7 @@
                     <navigationItem key="navigationItem" title="수정화면" id="qRu-Cg-fEh"/>
                     <connections>
                         <outlet property="lblWay" destination="kXm-sM-wcN" id="Y34-GU-FEE"/>
+                        <outlet property="swIsOn" destination="ci7-J6-qAl" id="GZQ-CP-0oP"/>
                         <outlet property="txMessage" destination="0V0-ex-NSV" id="eFA-GJ-sn0"/>
                     </connections>
                 </viewController>
