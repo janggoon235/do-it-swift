@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "84734EDC-B8C8-479B-A121-059339270F2C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD7F7963-3F09-4A4C-A84E-FA157C24ED4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "12.TodoList/AddViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AddViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FD7F7963-3F09-4A4C-A84E-FA157C24ED4F - edf576ab319f8398"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_TodoList.AddViewController.imageArray.getter : Swift.Array&lt;Swift.Optional&lt;__C.UIImage&gt;&gt;"
+                  moduleName = "12.TodoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silverj/swift_workplace/doit_swift/12.TodoList/12.TodoList/AddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "FD7F7963-3F09-4A4C-A84E-FA157C24ED4F - 74b4331c0ab1c3ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_TodoList.AddViewController.imageArray.setter : Swift.Array&lt;Swift.Optional&lt;__C.UIImage&gt;&gt;"
+                  moduleName = "12.TodoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silverj/swift_workplace/doit_swift/12.TodoList/12.TodoList/AddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "FD7F7963-3F09-4A4C-A84E-FA157C24ED4F - e5c8891cac0039d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_TodoList.AddViewController.imageArray.modify : Swift.Array&lt;Swift.Optional&lt;__C.UIImage&gt;&gt;"
+                  moduleName = "12.TodoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silverj/swift_workplace/doit_swift/12.TodoList/12.TodoList/AddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "FD7F7963-3F09-4A4C-A84E-FA157C24ED4F - d937e8107e2008df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_TodoList.AddViewController.imageArray.modify : Swift.Array&lt;Swift.Optional&lt;__C.UIImage&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "12.TodoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silverj/swift_workplace/doit_swift/12.TodoList/12.TodoList/AddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "FD7F7963-3F09-4A4C-A84E-FA157C24ED4F - 95848428d27de708"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_TodoList.AddViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; _2_TodoList.AddViewController"
+                  moduleName = "12.TodoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silverj/swift_workplace/doit_swift/12.TodoList/12.TodoList/AddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "FD7F7963-3F09-4A4C-A84E-FA157C24ED4F - 700ba22078f54944"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_2_TodoList.AddViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;_2_TodoList.AddViewController&gt;"
+                  moduleName = "12.TodoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/silverj/swift_workplace/doit_swift/12.TodoList/12.TodoList/AddViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
