@@ -105,27 +105,73 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="xrQ-Ba-zE4">
+                                <rect key="frame" x="123.33333333333333" y="587" width="146.33333333333337" height="114.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-co-JwS">
+                                        <rect key="frame" x="0.0" y="0.0" width="146.33333333333334" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6n-Ws-560">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rKJ-vb-MXP">
+                                                <rect key="frame" x="97.333333333333329" y="0.0" width="50.999999999999986" height="31"/>
+                                                <connections>
+                                                    <action selector="swRecordMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="QPJ-FY-w7Y"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="IHX-a2-fJq">
+                                        <rect key="frame" x="0.0" y="80" width="146.33333333333334" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuH-NW-P7C">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Record"/>
+                                                <connections>
+                                                    <action selector="btnRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CE9-th-2M6"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDY-r7-zcS">
+                                                <rect key="frame" x="100.33333333333333" y="0.0" width="45.999999999999986" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uoJ-hS-Psh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="O5a-es-2vJ"/>
+                            <constraint firstItem="xrQ-Ba-zE4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PoC-B7-Yb4"/>
+                            <constraint firstItem="xrQ-Ba-zE4" firstAttribute="top" secondItem="uoJ-hS-Psh" secondAttribute="bottom" constant="39" id="U0T-mb-Izf"/>
                             <constraint firstItem="uoJ-hS-Psh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xbs-2M-c8I"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnPause" destination="vbA-Du-CJB" id="M2C-Ep-lBY"/>
                         <outlet property="btnPlay" destination="z5b-xx-0t2" id="1Ug-QW-mSl"/>
+                        <outlet property="btnRecord" destination="fuH-NW-P7C" id="r1J-5t-01B"/>
                         <outlet property="btnStop" destination="TLk-ld-r4S" id="N38-ya-XhI"/>
                         <outlet property="lblCurrentTime" destination="8PK-bg-QT9" id="6Di-6V-Ejz"/>
                         <outlet property="lblEndTime" destination="Ral-pR-fga" id="ExI-mJ-ZAK"/>
+                        <outlet property="lblRecordTime" destination="sDY-r7-zcS" id="oHc-ES-1AL"/>
                         <outlet property="pvProgressPlay" destination="40Q-wp-qjT" id="CP7-sI-asj"/>
+                        <outlet property="recordSw" destination="rKJ-vb-MXP" id="xfs-Qe-Cyj"/>
                         <outlet property="slVolume" destination="Gir-lj-UHh" id="Cvy-n4-oq1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.615384615384613" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="23.664122137404579" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
