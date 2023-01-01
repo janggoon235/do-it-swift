@@ -24,6 +24,7 @@
 		9519CD9F2961D54700BD14E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9519CDA22961D54700BD14E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9519CDA42961D54700BD14E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9519CDAA2961D58200BD14E6 /* 1인화로.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1인화로.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				9519CD962961D54600BD14E6 /* AppDelegate.swift */,
+				9519CDAA2961D58200BD14E6 /* 1인화로.mp4 */,
 				9519CD982961D54600BD14E6 /* SceneDelegate.swift */,
 				9519CD9A2961D54600BD14E6 /* ViewController.swift */,
 				9519CD9C2961D54600BD14E6 /* Main.storyboard */,
