@@ -29,6 +29,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="선"/>
+                                                <connections>
+                                                    <action selector="btnDrawLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sz4-In-zVu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yow-WT-vpG">
                                                 <rect key="frame" x="71.666666666666657" y="0.0" width="71.666666666666657" height="40"/>
@@ -37,6 +40,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="사각형"/>
+                                                <connections>
+                                                    <action selector="btnDrawRectangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZE1-iQ-3z4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bce-CT-f3y">
                                                 <rect key="frame" x="143.33333333333334" y="0.0" width="71.333333333333343" height="40"/>
@@ -45,6 +51,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="원"/>
+                                                <connections>
+                                                    <action selector="btnDrawCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0f-D3-Tww"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywM-uq-I1D">
                                                 <rect key="frame" x="214.66666666666666" y="0.0" width="71.666666666666657" height="40"/>
@@ -53,6 +62,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="호"/>
+                                                <connections>
+                                                    <action selector="btnDrawArc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7k5-ee-FMH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf0-Cu-AMK">
                                                 <rect key="frame" x="286.33333333333331" y="0.0" width="71.666666666666686" height="40"/>
@@ -61,6 +73,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="채우기"/>
+                                                <connections>
+                                                    <action selector="btnDrawFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofH-NI-TKW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -79,6 +94,9 @@
                             <constraint firstItem="xB8-rj-fx1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="m5Z-cj-ODl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="iWV-gN-QHc" id="nRd-cb-oKa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
