@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,21 +13,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_5_CameraPhotoLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-gt-b2t">
-                                <rect key="frame" x="16" y="47" width="358" height="763"/>
+                                <rect key="frame" x="16" y="0.0" width="382" height="736"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5RR-Sy-BjA">
-                                        <rect key="frame" x="0.0" y="0.0" width="358" height="683"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="656"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4Da-2M-vzM">
-                                        <rect key="frame" x="0.0" y="683" width="358" height="40"/>
+                                        <rect key="frame" x="0.0" y="656" width="382" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvW-qc-GdS">
-                                                <rect key="frame" x="0.0" y="0.0" width="179" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="isc-yS-0ko"/>
                                                 </constraints>
@@ -38,7 +38,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBU-qM-PVm">
-                                                <rect key="frame" x="179" y="0.0" width="179" height="40"/>
+                                                <rect key="frame" x="191" y="0.0" width="191" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Ib4-tk-WER"/>
                                                 </constraints>
@@ -51,10 +51,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NcM-3a-keI">
-                                        <rect key="frame" x="0.0" y="723" width="358" height="40"/>
+                                        <rect key="frame" x="0.0" y="696" width="382" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ1-iM-fWY">
-                                                <rect key="frame" x="0.0" y="0.0" width="179" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="78d-OB-5np"/>
                                                 </constraints>
@@ -65,7 +65,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ov-2o-yOS">
-                                                <rect key="frame" x="179" y="0.0" width="179" height="40"/>
+                                                <rect key="frame" x="191" y="0.0" width="191" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Ln7-QB-aD8"/>
                                                 </constraints>
