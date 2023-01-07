@@ -70,5 +70,31 @@ class ViewController: UIViewController {
             imgView.image = nil
         }
     }
+    @IBAction func btnSetBlack(_ sender: UIButton) {
+        lineColor = UIColor.black.cgColor
+        sender.setTitleColor(UIColor.black, for: UIControl.State.focused)
+        
+    }
+    
+    @IBAction func btnSetRed(_ sender: UIButton) {
+        lineColor = UIColor.red.cgColor
+        sender.setTitleColor(UIColor.black, for: UIControl.State.focused)
+    }
+    
+    @IBAction func btnSetGreen(_ sender: UIButton) {
+        lineColor = UIColor.green.cgColor
+        sender.setTitleColor(UIColor.black, for: UIControl.State.focused)
+    }
+    
+    @IBAction func btnSetBlue(_ sender: UIButton) {
+        lineColor = UIColor.blue.cgColor
+        sender.setTitleColor(UIColor.black, for: UIControl.State.focused)
+    }
+    
+    @IBAction func btnSetLineThick(_ sender: UIButton) {
+        lineSize = lineSize + 1.0
+    }
+    
+    
 }
 
