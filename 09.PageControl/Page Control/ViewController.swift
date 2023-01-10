@@ -10,9 +10,13 @@ import UIKit
 var images = [ "01.jpg", "02.jpeg", "03.jpeg", "04.jpeg", "05.jpg"]
 class ViewController: UIViewController {
     @IBOutlet var imgView: UIImageView!
-    
     @IBOutlet var pageControl: UIPageControl!
+    
+    
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -21,11 +25,36 @@ class ViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.green
         pageControl.currentPageIndicatorTintColor = UIColor.red
         imgView.image = UIImage(named: images[0])
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.repondToSwipeGesture(_:)))
+        swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
+
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.repondToSwipeGesture(_:)))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        self.view.addGestureRecognizer(swipeRight)
     }
 
 
     @IBAction func pageChange(_ sender: UIPageControl) {
         imgView.image = UIImage(named: images[pageControl.currentPage])
     }
+    
+    @objc func repondToSwipeGesture(_ gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            if (swipeGesture.direction == UISwipeGestureRecognizer.Direction.left
+                && pageControl.currentPage != 4 ) {
+                pageControl.currentPage = pageControl.currentPage + 1
+                pageChange(pageControl)
+            } else if (swipeGesture.direction == UISwipeGestureRecognizer.Direction.right
+                       && pageControl.currentPage != 0 ) {
+                pageControl.currentPage = pageControl.currentPage - 1
+                pageChange(pageControl)
+                
+            }
+        }
+    }
+    
 }
 
