@@ -8,9 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var txtPinch: UILabel!
     
+    @IBOutlet var imgPinch: UIImageView!
     var initialFontsize:CGFloat!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +20,18 @@ class ViewController: UIViewController {
     }
     
     @objc func doPinch(_ pinch: UIPinchGestureRecognizer) {
-        if (pinch.state == UIGestureRecognizer.State.began) {
-            initialFontsize = txtPinch.font.pointSize
-        } else {
-            txtPinch.font = txtPinch.font.withSize(initialFontsize*pinch.scale)
-        }
+        // label로 했을 때
+//        if (pinch.state == UIGestureRecognizer.State.began) {
+//            initialFontsize = txtPinch.font.pointSize
+//
+//
+//        } else {
+//            txtPinch.font = txtPinch.font.withSize(initialFontsize*pinch.scale)
+//        }
+        
+        // image로 했을 때
+        imgPinch.transform = imgPinch.transform.scaledBy(x: pinch.scale, y: pinch.scale)
+        pinch.scale = 1
     }
 
 
