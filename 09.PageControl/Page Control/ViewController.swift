@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.repondToSwipeGesture(_:)))
         swipeRight.direction = UISwipeGestureRecognizer.Direction.right
         self.view.addGestureRecognizer(swipeRight)
+        
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(ViewController.doPinch(_:)))
+        self.view.addGestureRecognizer(pinch)
     }
 
 
@@ -54,6 +57,10 @@ class ViewController: UIViewController {
                 
             }
         }
+    }
+    
+    @objc func doPinch(_ pinch: UIPinchGestureRecognizer) {
+        imgView.transform = imgView.transform.scaledBy(x: pinch.scale, y: pinch.scale)
     }
     
 }
